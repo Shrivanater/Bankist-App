@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="/icon.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Bankist</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <p class = "msg">Log In to Get Started</p>
+      <img src = 'logo.png' class = "logo">
+      <form>
+        <input type="text" placeholder="User" class="login-user">
+        <input type="password" placeholder ="PIN" class="login-pin">
+        <button class = "arrow-btn login-btn">&rarr;</button>
+      </form>
+    </nav>
+
+    <main class="app">
+
+      <!-- Balance -->
+      <div class = "balance">
+        <div>
+          <p class = "balance-text">Current Balance</p>
+          <p class = "balance-time">As of <span class = "date">00/00/0000</span></p>
+        </div> 
+        <p class = "balance-amt">0000₹</p>
+      </div>
+
+      <!-- Transactions -->
+      <div class = "transactions">
+        <div class = "transactions-row">
+          <div class = "transactions-type transactions-type-deposit">1 DEPOSIT</div>
+          <div class = "transactions-date">00/00/0000</div>
+          <div class = "transactions-amt">0000₹</div>
+        </div>
+        <div class = "transactions-row">
+          <div class = "transactions-type transactions-type-withdrawal">2 WITHDRAWAL</div>
+          <div class = "transactions-date">00/00/0000</div>
+          <div class = "transactions-amt">0000₹</div>
+        </div>
+      </div>
+
+      <!-- Transfers -->
+      <div class = "transfers">
+        <p class = "op-label">Transfer Money</p>
+        <form>
+          <input type = "text" class = "op-input transfer-acc">
+          <input type = "number" class = "op-input transfer-amt">
+          <button class = "op-btn transfer-btn">&rarr;</button>
+          <p class = " label">Transfer To</p>
+          <p class = "label">Amount</p>
+        </form>
+      </div>
+
+      <!-- Loans -->
+      <div class = "loans"> 
+        <p class = "op-label">Request Loan</p>
+        <form class = 'form-loan'>
+          <input type = "number" class = "op-input loan-amt">
+          <button class = "op-btn loan-btn">&rarr;</button>;
+          <p class = "label">Amount</p>
+        </form>  
+      </div>
+
+      <!-- Close Account -->
+      <div class = "close">   
+        <p class = "op-label">Close Account</p>
+        <form>
+          <input type = "text" class = "op-input close-user">
+          <input type = "number" class = "op-input close-pin">
+          <button class = "op-btn close-btn">&rarr;</button>
+          <p class = "label">Confirm User</p> 
+          <p class = "label">Confirm PIN</p> 
+        </form>
+      </div>
+      
+      <!-- Summary -->
+      <div class = "summary">
+        <p class="summary-label">IN</p>
+        <p class = "summary-value summary-in">0000₹</p>
+        <p class="summary-label">OUT</p>
+        <p class = "summary-value summary-out">0000₹</p>
+        <p class="summary-label">INTEREST</p>
+        <p class = "summary-value summary-interest">0000₹</p>
+        <button class = "sort-btn" value = "OFF">&downarrow;SORT</button>
+      </div>
+
+      <!-- Logout Timer -->
+      <p class = "logout-timer">
+        You will be logged out in <span class = "timer">5:00</span>
+      </p>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
